@@ -1,0 +1,19 @@
+{
+  "name": "csskit",
+  "description": "simple modular css",
+  "version": "1.0.0",
+  "repository": {
+    "url": "git://github.com/sethvincent/csskit.git"
+  },
+  "style": "csskit.css",
+  "scripts": {
+    "bundle": "sheetify source.css > csskit.css"
+  },
+  "dependencies": {
+    "csskit-button": "^2.0.0",
+    "csskit-form": "^1.0.0"
+  },
+  "devDependencies": {
+    "sheetify": "^2.0.0"
+  }
+}
