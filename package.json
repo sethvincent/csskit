@@ -10,7 +10,7 @@
     "bundle": "sheetify source.css > csskit.css"
   },
   "dependencies": {
-    "csskit-button": "^2.0.0",
+    "csskit-button": "^2.0.1",
     "csskit-form": "^1.0.0"
   },
   "devDependencies": {
