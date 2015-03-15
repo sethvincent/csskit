@@ -1,0 +1,93 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/Users/sethvincent/.nvm/v0.10.35/bin/npm', 'publish' ]
+2 info using npm@2.5.0
+3 info using node@v0.10.35
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec { raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: '/Users/sethvincent/workspace/csskit/csskit',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory /Users/sethvincent/.npm/csskit/1.0.0/package.tgz not in flight; packing
+9 verbose tar pack [ '/Users/sethvincent/.npm/csskit/1.0.0/package.tgz',
+9 verbose tar pack   '/Users/sethvincent/workspace/csskit/csskit' ]
+10 verbose tarball /Users/sethvincent/.npm/csskit/1.0.0/package.tgz
+11 verbose folder /Users/sethvincent/workspace/csskit/csskit
+12 info prepublish csskit@1.0.0
+13 verbose addLocalTarball adding from inside cache /Users/sethvincent/.npm/csskit/1.0.0/package.tgz
+14 silly cache afterAdd csskit@1.0.0
+15 verbose afterAdd /Users/sethvincent/.npm/csskit/1.0.0/package/package.json not in flight; writing
+16 verbose afterAdd /Users/sethvincent/.npm/csskit/1.0.0/package/package.json written
+17 silly publish { name: 'csskit',
+17 silly publish   description: 'simple modular css',
+17 silly publish   version: '1.0.0',
+17 silly publish   repository: { url: 'git://github.com/sethvincent/csskit.git' },
+17 silly publish   style: 'csskit.css',
+17 silly publish   scripts: { bundle: 'sheetify source.css > csskit.css' },
+17 silly publish   dependencies: { 'csskit-button': '^2.0.1', 'csskit-form': '^1.0.0' },
+17 silly publish   devDependencies: { sheetify: '^2.0.0' },
+17 silly publish   readme: '# csskit\n\nsimple modular css.\n\n### This package is a bundle of smaller modules:\n\n- [csskit-form](http://npmjs.org/csskit-form)\n- [csskit-button](http://npmjs.org/csskit-button)\n- _(more on the way)_\n\nInstead of using this bundle, you could just use each of the modules you need.\n\n## Install\n\n```\nnpm i --save csskit\n```\n\nOr just grab the csskit.css file.\n\n## Usage\n\nIf you installed with npm:\n\n- In your main css file: `@import "csskit";`\n- Use a tool like [sheetify](http://npmjs.org/sheetify) or [rework-npm-cli](http://npmjs.org/rework-npm-cli) to bundle the css.\n- Example using npm-rework-cli: `npm-rework main.css -o bundle.css`\n\n### See the above list of modules for documentation on usage of each module\n\n## License\n[MIT](LICENSE.md)',
+17 silly publish   readmeFilename: 'README.md',
+17 silly publish   gitHead: '810cc1940224b9c7171b638d728bfd6f85cb2de2',
+17 silly publish   bugs: { url: 'https://github.com/sethvincent/csskit/issues' },
+17 silly publish   homepage: 'https://github.com/sethvincent/csskit',
+17 silly publish   _id: 'csskit@1.0.0',
+17 silly publish   _shasum: 'e00e0745e91e64e60b4ce0957d15c92b18004254',
+17 silly publish   _from: '.' }
+18 silly mapToRegistry name csskit
+19 silly mapToRegistry using default registry
+20 silly mapToRegistry registry https://registry.npmjs.org/
+21 silly mapToRegistry uri https://registry.npmjs.org/csskit
+22 verbose publish registryBase https://registry.npmjs.org/
+23 silly publish uploading /Users/sethvincent/.npm/csskit/1.0.0/package.tgz
+24 verbose request uri https://registry.npmjs.org/csskit
+25 verbose request sending authorization for write operation
+26 info attempt registry request try #1 at 14:39:37
+27 verbose request id 4acb3679f216359e
+28 http request PUT https://registry.npmjs.org/csskit
+29 http 403 https://registry.npmjs.org/csskit
+30 verbose headers { date: 'Sun, 15 Mar 2015 21:39:38 GMT',
+30 verbose headers   server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+30 verbose headers   'content-type': 'application/json',
+30 verbose headers   'cache-control': 'max-age=60',
+30 verbose headers   'content-length': '3037',
+30 verbose headers   'accept-ranges': 'bytes',
+30 verbose headers   via: '1.1 varnish',
+30 verbose headers   'x-served-by': 'cache-lax1429-LAX',
+30 verbose headers   'x-cache': 'MISS',
+30 verbose headers   'x-cache-hits': '0',
+30 verbose headers   'x-timer': 'S1426455578.121841,VS0,VE55',
+30 verbose headers   'keep-alive': 'timeout=10, max=50',
+30 verbose headers   connection: 'Keep-Alive' }
+31 verbose request invalidating /Users/sethvincent/.npm/registry.npmjs.org/csskit on PUT
+32 error publish Failed PUT 403
+33 verbose stack Error: forbidden cannot modify pre-existing version: 1.0.0
+33 verbose stack old={"name":"csskit","description":"simple modular css","version":"1.0.0","repository":{"url":"git://github.com/sethvincent/csskit.git"},"style":"csskit.css","scripts":{"bundle":"sheetify source.css > csskit.css"},"dependencies":{"csskit-button":"^2.0.0","csskit-form":"^1.0.0"},"devDependencies":{"sheetify":"^2.0.0"},"gitHead":"e7b4f58a78a6249bf1957d71dafb968271cc033f","bugs":{"url":"https://github.com/sethvincent/csskit/issues"},"homepage":"https://github.com/sethvincent/csskit","_id":"csskit@1.0.0","_shasum":"862f7c4daaf9f437b51406ddee305b13e908b846","_from":".","_npmVersion":"2.5.0","_nodeVersion":"0.10.35","_npmUser":{"name":"sethvincent","email":"sethvincent@gmail.com"},"maintainers":[{"name":"sethvincent","email":"sethvincent@gmail.com"}],"dist":{"shasum":"862f7c4daaf9f437b51406ddee305b13e908b846","tarball":"http://registry.npmjs.org/csskit/-/csskit-1.0.0.tgz"}}
+33 verbose stack new={"name":"csskit","description":"simple modular css","version":"1.0.0","repository":{"url":"git://github.com/sethvincent/csskit.git"},"style":"csskit.css","scripts":{"bundle":"sheetify source.css > csskit.css"},"dependencies":{"csskit-button":"^2.0.1","csskit-form":"^1.0.0"},"devDependencies":{"sheetify":"^2.0.0"},"readme":"# csskit\u000a\u000asimple modular css.\u000a\u000a### This package is a bundle of smaller modules:\u000a\u000a- [csskit-form](http://npmjs.org/csskit-form)\u000a- [csskit-button](http://npmjs.org/csskit-button)\u000a- _(more on the way)_\u000a\u000aInstead of using this bundle, you could just use each of the modules you need.\u000a\u000a## Install\u000a\u000a```\u000anpm i --save csskit\u000a```\u000a\u000aOr just grab the csskit.css file.\u000a\u000a## Usage\u000a\u000aIf you installed with npm:\u000a\u000a- In your main css file: `@import \"csskit\";`\u000a- Use a tool like [sheetify](http://npmjs.org/sheetify) or [rework-npm-cli](http://npmjs.org/rework-npm-cli) to bundle the css.\u000a- Example using npm-rework-cli: `npm-rework main.css -o bundle.css`\u000a\u000a### See the above list of modules for documentation on usage of each module\u000a\u000a## License\u000a[MIT](LICENSE.md)","readmeFilename":"README.md","gitHead":"810cc1940224b9c7171b638d728bfd6f85cb2de2","bugs":{"url":"https://github.com/sethvincent/csskit/issues"},"homepage":"https://github.com/sethvincent/csskit","_id":"csskit@1.0.0","_shasum":"e00e0745e91e64e60b4ce0957d15c92b18004254","_from":".","_npmVersion":"2.5.0","_nodeVersion":"0.10.35","_npmUser":{"name":"sethvincent","email":"sethvincent@gmail.com"},"maintainers":[{"name":"sethvincent","email":"sethvincent@gmail.com"}],"dist":{"shasum":"e00e0745e91e64e60b4ce0957d15c92b18004254","tarball":"http://registry.npmjs.org/csskit/-/csskit-1.0.0.tgz"}}: csskit
+33 verbose stack     at CachingRegistryClient.<anonymous> (/Users/sethvincent/.nvm/v0.10.35/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:254:14)
+33 verbose stack     at Request._callback (/Users/sethvincent/.nvm/v0.10.35/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:178:14)
+33 verbose stack     at Request.self.callback (/Users/sethvincent/.nvm/v0.10.35/lib/node_modules/npm/node_modules/request/request.js:373:22)
+33 verbose stack     at Request.emit (events.js:98:17)
+33 verbose stack     at Request.<anonymous> (/Users/sethvincent/.nvm/v0.10.35/lib/node_modules/npm/node_modules/request/request.js:1318:14)
+33 verbose stack     at Request.emit (events.js:117:20)
+33 verbose stack     at IncomingMessage.<anonymous> (/Users/sethvincent/.nvm/v0.10.35/lib/node_modules/npm/node_modules/request/request.js:1266:12)
+33 verbose stack     at IncomingMessage.emit (events.js:117:20)
+33 verbose stack     at _stream_readable.js:944:16
+33 verbose stack     at process._tickCallback (node.js:442:13)
+34 verbose statusCode 403
+35 verbose pkgid csskit
+36 verbose cwd /Users/sethvincent/workspace/csskit/csskit
+37 error Darwin 14.0.0
+38 error argv "node" "/Users/sethvincent/.nvm/v0.10.35/bin/npm" "publish"
+39 error node v0.10.35
+40 error npm  v2.5.0
+41 error code E403
+42 error forbidden cannot modify pre-existing version: 1.0.0
+42 error old={"name":"csskit","description":"simple modular css","version":"1.0.0","repository":{"url":"git://github.com/sethvincent/csskit.git"},"style":"csskit.css","scripts":{"bundle":"sheetify source.css > csskit.css"},"dependencies":{"csskit-button":"^2.0.0","csskit-form":"^1.0.0"},"devDependencies":{"sheetify":"^2.0.0"},"gitHead":"e7b4f58a78a6249bf1957d71dafb968271cc033f","bugs":{"url":"https://github.com/sethvincent/csskit/issues"},"homepage":"https://github.com/sethvincent/csskit","_id":"csskit@1.0.0","_shasum":"862f7c4daaf9f437b51406ddee305b13e908b846","_from":".","_npmVersion":"2.5.0","_nodeVersion":"0.10.35","_npmUser":{"name":"sethvincent","email":"sethvincent@gmail.com"},"maintainers":[{"name":"sethvincent","email":"sethvincent@gmail.com"}],"dist":{"shasum":"862f7c4daaf9f437b51406ddee305b13e908b846","tarball":"http://registry.npmjs.org/csskit/-/csskit-1.0.0.tgz"}}
+42 error new={"name":"csskit","description":"simple modular css","version":"1.0.0","repository":{"url":"git://github.com/sethvincent/csskit.git"},"style":"csskit.css","scripts":{"bundle":"sheetify source.css > csskit.css"},"dependencies":{"csskit-button":"^2.0.1","csskit-form":"^1.0.0"},"devDependencies":{"sheetify":"^2.0.0"},"readme":"# csskit\u000a\u000asimple modular css.\u000a\u000a### This package is a bundle of smaller modules:\u000a\u000a- [csskit-form](http://npmjs.org/csskit-form)\u000a- [csskit-button](http://npmjs.org/csskit-button)\u000a- _(more on the way)_\u000a\u000aInstead of using this bundle, you could just use each of the modules you need.\u000a\u000a## Install\u000a\u000a```\u000anpm i --save csskit\u000a```\u000a\u000aOr just grab the csskit.css file.\u000a\u000a## Usage\u000a\u000aIf you installed with npm:\u000a\u000a- In your main css file: `@import \"csskit\";`\u000a- Use a tool like [sheetify](http://npmjs.org/sheetify) or [rework-npm-cli](http://npmjs.org/rework-npm-cli) to bundle the css.\u000a- Example using npm-rework-cli: `npm-rework main.css -o bundle.css`\u000a\u000a### See the above list of modules for documentation on usage of each module\u000a\u000a## License\u000a[MIT](LICENSE.md)","readmeFilename":"README.md","gitHead":"810cc1940224b9c7171b638d728bfd6f85cb2de2","bugs":{"url":"https://github.com/sethvincent/csskit/issues"},"homepage":"https://github.com/sethvincent/csskit","_id":"csskit@1.0.0","_shasum":"e00e0745e91e64e60b4ce0957d15c92b18004254","_from":".","_npmVersion":"2.5.0","_nodeVersion":"0.10.35","_npmUser":{"name":"sethvincent","email":"sethvincent@gmail.com"},"maintainers":[{"name":"sethvincent","email":"sethvincent@gmail.com"}],"dist":{"shasum":"e00e0745e91e64e60b4ce0957d15c92b18004254","tarball":"http://registry.npmjs.org/csskit/-/csskit-1.0.0.tgz"}}: csskit
+43 error If you need help, you may report this error at:
+43 error     <http://github.com/npm/npm/issues>
+44 verbose exit [ 1, true ]
